@@ -1,24 +1,27 @@
 #include <iostream>
 #include <stack>
+using namespace std;
 
 int main() {
     
     int N;
+    cin >> N;
     stack <int> numeros;
-    int soma;
+    int soma = 0;
     int nmrs;
 
     for (int i = 0; i < N; i++) {
         cin >> nmrs;
-        if (nmrs != 0) {
-            numeros.push(nmrs);
-        }
-        else {
-            numeros.pop();
-        }
+        nmrs != 0 ? numeros.push(nmrs) : numeros.pop();
     }
-    for (int i = 0; i < N; i++) {
-        soma += numeros
+
+    while (!numeros.empty()) {
+        soma += numeros.top();
+        numeros.pop();
     }
+
+    cout << soma;
+
+    return 0;
     
 }
