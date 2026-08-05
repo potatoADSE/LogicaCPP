@@ -11,7 +11,7 @@ int main() {
 
 	for (int i = 0; i < N; i++) {
 		cin >> intrp[i];
-		if (intrp[i] == 1 && AisOn == 2) {
+		if (intrp[i] == 1 && AisOn == -3) {
 			AisOn = 3;
 		}
 		else if (intrp[i] == 1 && AisOn == 3) {
