@@ -27,7 +27,8 @@ int main() {
 	for (int i = 0; i <= 4; i++) {
 		cout<<lista[i]<<" ";
 	}
-
+	cout << "\n";
+	
 	return 0;
 
 }
